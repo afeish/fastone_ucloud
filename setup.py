@@ -10,21 +10,22 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', ]
+requirements = ['Click>=7.0', 'six>=1.15.0']
 
-setup_requirements = ['pytest-runner', 'wheel']
+setup_requirements = ['pytest-runner', 'wheel', 'six']
 
 test_requirements = ['pytest>=3', ]
 
 setup(
     author="Xiaofei Chen",
     author_email='neocxf@qq.com',
-    python_requires='>=3.5',
+    python_requires='>=2',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
@@ -48,6 +49,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/neocxf/fastone_ucloud',
-    version='0.1.1',
+    version='0.1.2',
     zip_safe=False,
 )

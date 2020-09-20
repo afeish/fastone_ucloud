@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
+from six.moves import configparser
 
 import os
 import time
 import random
-import configparser
 
 import click
 
