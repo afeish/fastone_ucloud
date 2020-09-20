@@ -19,7 +19,7 @@ test_requirements = ['pytest>=3', ]
 setup(
     author="Xiaofei Chen",
     author_email='neocxf@qq.com',
-    python_requires='>=3.5',
+    python_requires='>=2',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -34,7 +34,7 @@ setup(
     description="ucloud deployment services that work on FastOne stack for computing service",
     entry_points={
         'console_scripts': [
-            'fastone_ucloud=fastone_ucloud.cli:main',
+            'fastone-ucloud=fastone_ucloud.cli:cli',
         ],
     },
     install_requires=requirements,
