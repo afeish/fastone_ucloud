@@ -112,3 +112,12 @@ def push(repository, branch):
     with click.progressbar(files) as bar:
         for file in bar:
             time.sleep(random.random())
+
+
+@click.command()
+def main(args=None):
+    """Console script for fastone_ucloud."""
+    click.echo("Replace this message by putting your code into "
+               "fastone_ucloud.cli.main")
+    click.echo("See click documentation at https://click.palletsprojects.com/")
+    return 0
